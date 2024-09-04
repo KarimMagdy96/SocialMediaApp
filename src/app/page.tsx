@@ -1,9 +1,14 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useSelector } from "react-redux";
+import { IState } from "@/interfaces/state";
 
 export default function Home() {
+  let { counter } = useSelector((state: IState) => state.counter);
   return (
     <main className={styles.main}>
+      <h1>counter: {counter}</h1>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
