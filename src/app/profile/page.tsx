@@ -14,13 +14,6 @@ const Profile = () => {
       <div>counter:{counter}</div>;
       <button
         onClick={() => {
-          dispatch(increase());
-        }}
-      >
-        click
-      </button>
-      <button
-        onClick={() => {
           dispatch(increaseByA(10));
         }}
       >
